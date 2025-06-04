@@ -33,3 +33,7 @@ for row in rows:
 
 # Menutup koneksi
 conn.close()
+# Streamlit app untuk menampilkan data dari MySQL
+st.title("Data Akreditasi")
+for row in rows:
+    st.write(row)
