@@ -8,9 +8,6 @@ load_dotenv()
 
 # Ambil kredensial dari variabel lingkungan
 db_host = os.getenv("DB_HOST")
-db_port = os.getenv("DB_PORT")
-if db_port is None:
-    db_port = 3306  # Default MySQL port
 db_user = os.getenv("DB_USER")
 db_password = os.getenv("DB_PASSWORD")
 db_name = os.getenv("DB_NAME")
