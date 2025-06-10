@@ -12,6 +12,11 @@ db_user = os.getenv("DB_USER")
 db_password = os.getenv("DB_PASSWORD")
 db_name = os.getenv("DB_NAME")
 
+print("DB_HOST:", db_host)
+print("DB_USER:", db_user)
+print("DB_PASSWORD:", db_password)
+print("DB_NAME:", db_name)
+
 # Koneksi ke MySQL menggunakan kredensial dari .env
 conn = mysql.connector.connect(
     host=db_host,      # Host dari variabel lingkungan
