@@ -19,12 +19,12 @@ conn = mysql.connector.connect(
 cursor = conn.cursor()
 
 # Menjalankan query untuk mengambil data
-cursor.execute("SELECT * FROM tbl_akreditasi")
+cursor.execute("SELECT * FROM tbl_akreditasi LIMIT 100")
 rows = cursor.fetchall()
 
 # Menampilkan data yang diambil di Streamlit
 st.title("Data Akreditasi")
-for row in rows:
+for row in rows[:10]:  # Batasi tampilan hanya 10 baris pertama
     st.write(row)
 
 # Menutup koneksi
