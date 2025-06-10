@@ -2,10 +2,10 @@ import streamlit as st
 import mysql.connector
 
 # Ambil kredensial dari Streamlit Secrets
-db_host = st.secrets["mysql"]["db_host"]
-db_user = st.secrets["mysql"]["db_user"]
-db_password = st.secrets["mysql"]["db_password"]
-db_name = st.secrets["mysql"]["db_name"]
+db_host = st.secrets["db_host"]
+db_user = st.secrets["db_user"]
+db_password = st.secrets["db_password"]
+db_name = st.secrets["db_name"]
 
 # Tampilkan kredensial untuk debugging (jika perlu)
 st.write("DB_HOST:", db_host)
