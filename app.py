@@ -7,12 +7,6 @@ db_user = st.secrets["db_user"]
 db_password = st.secrets["db_password"]
 db_name = st.secrets["db_name"]
 
-# Tampilkan kredensial untuk debugging (jika perlu)
-st.write("DB_HOST:", db_host)
-st.write("DB_USER:", db_user)
-st.write("DB_PASSWORD:", db_password)
-st.write("DB_NAME:", db_name)
-
 # Koneksi ke MySQL menggunakan kredensial dari secrets.toml
 conn = mysql.connector.connect(
     host=db_host,      # Host dari secrets
